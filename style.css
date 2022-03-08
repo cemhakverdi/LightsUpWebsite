@@ -1,0 +1,794 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100%;
+    color: #ffff00;
+    background-color: rgb(29, 26, 26);
+    scroll-behavior: smooth;
+    
+}
+
+.boldText {
+	font-weight: 700;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    background-image: url(pcHeroImage.png);
+    background-repeat: no-repeat; /*if we do not put this image will repeat itself on the xy plane */
+    background-size: cover; /*image will fullfil the website rather than it stay in original size */
+    background-position: center;
+}
+
+header img {
+    display: block;
+    margin: auto;
+    padding-top: 23%;
+    /*padding: 10px 5px 2px 1px; /* top right bottom left */
+    width: 350px;
+}
+
+h1 {
+    font-size: 80px;
+    margin-top: 85px;
+    text-align: center;
+    color: #f50707;
+}
+
+
+.twoColumns {
+    width: 36%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    
+}
+
+.button  {
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    color: #f50707;
+    background-color: #f1f1f100;
+    text-decoration: none;
+    border-radius: 4px;
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.button:hover{
+    font-size: 25px;
+    color: #ffff00;
+}
+
+#card-parent {
+	display: flex;
+    flex: 1;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items:flex-start;
+	margin:60px auto;
+    width: 80%;
+    background-color: rgb(29, 26, 26);
+    border: 1px #f50707;
+
+}
+.card {
+	display:flex;
+	flex-wrap: nowrap;
+    flex-direction: column;
+	background: rgb(44, 41, 41);
+	box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+	margin:0 1%;
+    width: 350px;
+    height: 500px;
+    transition: all 0.5s ease; /*controling speed of the hover effect*/
+}
+
+.card:hover{
+    transform: scale(1.11);
+}
+
+.image img {
+    width: 100%;
+    height: auto;	 
+    display: flex;
+	border-radius: 4px 4px 0 0;
+
+}
+
+.type {
+   flex-basis: 60%;
+   padding:17px;
+}
+
+.card h2 {
+    color: #f50707;
+    margin: 5px;
+    text-align: right;
+}
+
+.card small {
+    color: #f50707;
+    display: block;
+    text-align: right;
+}
+
+.card p {
+    color: rgba(255, 255, 255, 0.589);
+    
+    text-align: left;
+}
+
+.links a {
+    text-decoration: none;
+    color: #ffff00;
+    text-align: right;
+    font-size: 25px;
+    margin: 10px 2px;
+    float: right;
+    padding: 5px;
+}
+
+hr{
+    background-color: #ffff00;
+    width: 150px;
+    height: 2px;
+    border-width: 0;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.vl {
+    border-left: 6px solid black;
+    height: 25px;
+    float: right;
+    left: 50%;
+
+  }
+
+nav{
+	width: 50px;
+	background-color: transparent;
+	box-shadow: 0 1px 12px rgba(0,0,0,0.15);
+	height: 100%;
+	position: fixed;
+	top: 200px;
+    left: 5px;
+    
+}
+ul	{
+	text-align: center;
+	padding: 0;
+	margin: 10px 0 0 0;
+}
+li	{
+	display: inline;
+	color: #ffff00;
+	font-size: 35px;
+	font-weight: 600;
+	padding: 0 1%;
+}
+nav a	{
+	text-decoration: none;
+	color: #f50707;
+	transition: color 0.5s ease;
+    transition: font-size 0.4s ease;
+    
+}
+nav a:hover	{
+	color: #ffff00;
+    font-size: 55px;
+}
+
+
+#timetable	{
+	width: 100%;
+	margin-top: 40px;
+}
+
+table	{
+	width: 60%;
+	font-size: 16px;
+	line-height: 24px;
+	color: rgba(0,0,0,0.87);
+	text-align: left;
+	margin: 0 auto;
+	border-collapse: collapse;
+	background-color: rgb(44, 41, 41);
+	box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+	border-radius: 4px;
+    
+}
+.r_align	{
+	text-align: center;
+}
+
+td {
+    color: rgba(255, 255, 255, 0.589);
+}
+
+th{
+    color: #f50707;
+}
+
+th, td {
+    border-bottom: 1px solid #ffff00;
+    padding: 8px;
+  }
+.schedule h2	{
+	font-size: 24px;
+	font-weight: 500;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.589);
+	margin: 0;
+	padding: 36px 0 0 0;
+}
+
+tr:hover {
+   
+    background-color: rgb(32, 29, 29) ;
+    
+}
+
+footer{
+    color: rgba(255, 255, 255, 0.589); 
+    font-size: small;
+    text-align: right;
+}
+
+.modalDialog{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgb(0, 0, 0,0.7); /*last one is the opacity of the background*/
+    opacity: 0; /*if we set it 0 it will be invicible*/
+    transition: all 0.3s ease;
+    pointer-events: none;
+    
+}
+
+
+
+.modalDialog:target{
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.3s ease;
+    z-index: 5;
+}
+
+
+/*to be able to control div tags just 1 under the modal dialog
+not all of them to be able to control all of them dont put > */
+.modalDialog > div {
+    background-color: rgb(29, 26, 26);
+    width: 43%;
+    padding: 2% 4%;
+    margin: 10% auto; /*top and bottom 10% and right left auto*/
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    position: relative;
+    box-shadow: 0 6px 12px rgba(0,0,0,1);
+    background-image: linear-gradient(135deg, rgb(59, 59, 59) 0%, rgb(29, 27, 27) 85%);
+    
+}
+
+.modalDialog h2{
+    color: #f50707;
+    margin-left: 14.5%;
+}
+
+textarea{
+    display: block;
+    width: 70%;
+    height: 24px;
+    line-height: 24px;
+    font-size: 15px;
+    background-color: rgb(0, 0, 0,0.05);
+    margin: 10px auto; /*top and bottom 10px and right left olmasin box olduugu icin padding yapmadik cunku sadece kutuyu genisletir*/
+    resize: none;
+    outline: none;
+    border-color: #f50707;
+    border-radius: 7px;
+    color: rgba(255, 255, 255, 0.589);
+}
+
+
+
+
+.sendButton{
+    background: #ffff00;
+    color: #000;
+    margin: 16px 0 0 68.5%;
+    padding: 10px 20px;
+    display: inline-block; /*if we say block it will occupy all width space but if we say inline block it will stay small*/
+    text-decoration: none;
+    width: 70px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+
+.sendButton:hover{
+    background-color: #f50707;
+}
+
+
+/*this nested in > div part*/
+.closeButton{
+    background: #ffff00;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 40px;
+    text-align: center;
+    position: absolute;
+    top: -17px;
+    right: -14px;
+    width: 40px;
+    border-radius: 25px;
+}
+
+.closeButton:hover{
+    background-color: #f50707;
+}
+
+.modalDialog img {
+    display: block;
+    margin: auto;
+    padding-top: 5%;
+    width: 250px;
+    margin-left: 14.5%;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+   
+::-webkit-scrollbar-track {
+    background: rgb(29, 26, 26); 
+  }
+   
+::-webkit-scrollbar-thumb {
+    background: #f50707;
+    border-radius: 10px; 
+  }
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffff00;
+  }
+
+::selection {
+    color: #000000;
+    background: #ffff00;
+  }
+
+.custom-animation {
+    opacity: 0;
+    transform: rotate3d(1, .5, .5, 180deg) scale(0.1);
+    transition: all ease-in .4s;
+}
+
+.custom-animation-visible {
+    opacity: 1;
+    transform: none;
+}
+
+
+#location {
+	display: flex;
+    flex-direction: row;
+	background-color: rgb(29, 26, 26);
+    margin: 60px auto;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 80%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: 40%;
+    position: relative;
+    width: 100%;
+    height: 70px;
+    flex-wrap: nowrap; 
+    background: rgb(44, 41, 41);
+    margin: 0 1%;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.container img{
+    width: 80%;
+    height: auto;
+    padding-left: 71px;
+    padding-bottom: 10px;
+}
+
+.container p {
+    color: rgba(255, 255, 255, 0.589);
+    padding-left: 20px;
+    text-align: start;
+    font-size: 17px;  
+    margin-bottom: 3%;
+}
+
+
+
+.googleMap{
+    border: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*filter:grayscale(100%);*/
+}
+
+.container strong	{
+	text-decoration: none;
+	color: #f50707;
+	font-size: 27px;
+    float: left;
+}
+
+.container a	{
+	color: rgba(255, 255, 255, 0.589);
+	font-size: 17px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+
+.container a:hover{
+    text-decoration: underline;
+}
+
+.mapContainer {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: 40%;
+    position: relative;
+    width: 70%;
+    height: 70px;
+    flex-wrap: nowrap; 
+    background: rgb(44, 41, 41);
+    margin: 0 1%;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+
+/* for tablets */
+
+
+@media (max-width: 840px){
+
+    header{
+        background-image: url(iPadHeroImage.png);
+        height: initial;
+    }
+
+    header img{
+        padding-top: 37%;
+        width: 350px;
+        padding-left: 8px;
+    }
+
+    .modalDialog img{
+        margin-left: 8.5%;
+    }
+
+    .sendButton{
+        margin: 16px 0 0 66%;
+    }
+
+    .closeButton{
+        top: -11px;
+        right: -11px;
+    }
+
+    .twoColumns{
+        width: 52%;
+        font-size: 14px;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+
+    table {
+        width: 78%;
+    }
+
+    .modalDialog > div{
+        width: 70%;
+    }
+
+    .column{
+        margin: 22px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+
+    .button{
+        font-size: 14px;
+        padding-bottom: 20px;
+        padding-left: 22px;
+    }
+
+    .button:hover{
+        font-size: 23px;
+    }
+
+    #card-parent{
+        margin: 25px auto;
+        padding-left: 10px;
+        width: 80%;
+    }
+
+    .card{
+        height: auto;
+        width: 100%;
+    }
+
+    .card:hover{
+        transform: scale(1.1);
+    }
+
+    .links a{
+        margin: 15px 2px;
+    }
+
+    .card p{
+        font-size: 14px;
+    }
+
+
+    nav{
+        width: 35px;
+    }
+
+    
+    nav a:hover{
+        font-size: 35px;
+    }
+
+    li{
+        font-size: 25px;
+    }
+
+    .container p{
+        font-size: 12px;
+    }
+
+
+    .container a{
+        font-size: 12px;
+    }
+
+    td{
+        font-size: 13px;
+    }
+
+    .container strong{
+        font-size: 20px;
+    }
+
+    .container img{
+        padding-left: 38px;
+    }
+    
+}
+
+
+
+/* for Iphone 6/7/8 */
+@media (max-width: 420px){
+
+        header{
+        background-image: url(iPhoneHeroImage.png);
+        height: initial;
+    }
+    header{
+        width: 100%;
+    }
+
+    header img{
+        width: 230px;
+        padding-left: 16px;
+        padding-top: 55%;
+    }
+
+    .twoColumns{
+        font-size: 10px;
+        padding-left: 6px;
+        margin: 3px auto;
+        width: 61%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .modalDialog > div{
+        width: 80%;
+    }
+    .modalDialog img{
+        margin-left: 11.5%;
+        width: 180px;
+    }
+
+    .modalDialog h2{
+        font-size: 18px;
+        margin-left: 16%;
+    }
+
+    textarea{
+        width: 65%;
+        height: 20px;
+        line-height: 20px;
+        font-size: 13px;
+    }
+
+    .sendButton{
+        margin: 16px 0 0 59.5%;
+        padding: 8px 12px;
+        width: 55px;
+        font-size: 13px;
+    }
+
+    .closeButton{
+        top: -6px;
+        right: -6px;
+        line-height: 30px;
+        width: 30px;
+        font-size: 14px;
+    }
+
+    .button{
+        font-size: 10px;
+        padding-top: 0px;
+        width: auto;
+    }
+
+    .button:hover{
+        font-size: 12px;
+    }
+
+    .column{
+        margin: 3px;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+
+    nav{
+        width: 19px;
+    }
+
+    nav a:hover{
+        font-size: 25px;
+    }
+
+    li{
+        font-size: 18px;
+    }
+
+    #card-parent{
+        flex-direction: column;
+        margin: auto auto;
+    }
+
+    .card{
+        margin: 10px 1%;
+        width: 100%;
+        height: auto;
+    }
+
+    .card:hover{
+        transform: scale(1.08);
+    }
+
+    .card p{
+        font-size: 12px;
+    }
+
+    .card h2{
+        font-size: 16px;
+    }
+
+    .card small{
+        font-size: 8px;
+    }
+
+    .links a{
+        font-size: 20px;
+        margin: 15px 1px;
+        padding-left: 2px;
+    }
+
+    
+    .schedule{
+        padding-right: 20px;
+    }
+
+    table{
+        line-height: 11px;
+    }
+
+    td{
+        font-size: 10px;
+    }
+
+    th{
+        font-size: 11px;
+    }
+
+    th, td {
+        padding: 7px;
+    }
+
+    table{
+        width: 80%;
+    }
+
+    .schedule h2{
+        font-size: 16px;
+        padding-left: 20px;
+    }
+
+    #location{
+        width: 82%;
+    }
+
+    .container strong{
+        font-size: 15px;
+    }
+
+    .container a{
+        font-size: 10px;
+    }
+
+    .container p{
+        font-size: 9.5px;
+        padding-left: 3%;
+    }
+
+    .container img{
+        padding-left: 20px;
+    }
+
+    footer{
+        font-size: 8px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
